@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><u>Double the age</u></h2>
+    <script>
+        let users = [
+    { name: "Max", age: 30 },
+    { name: "Hopper", age: 20 },
+    { name: "Nancy", age: 26 },
+    { name: "Steve", age: 40 }
+];
+
+let result = users
+    .map(user => ({ name: user.name, age: user.age * 2 }))
+    .filter(user => user.age > 50)
+    .map(user => user.name);
+    document.write("<p><b>Double The Ages and Return the name above 50 are </b>"+result+"</p>")
+    </script>
+</body>
+</html>
